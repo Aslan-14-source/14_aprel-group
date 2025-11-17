@@ -34,9 +34,7 @@ public class demo4 {
         int n = sc.nextInt();
 
         int cemReqem = 0;
-        int temp = n;
-
-        while (temp > 0) {
+        int temp = n; 
             cemReqem += temp % 10;
             temp /= 10;
         }
