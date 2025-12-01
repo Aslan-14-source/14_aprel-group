@@ -3,7 +3,7 @@ package main;
 public class ArraysDemo {
 
     public static void main(String[] args) {
-        int[] numbers = {5, 10, 15, 20, 25};
+        int[] numbers = {3, 9, 12, 15, 21};
 
         int sum = findSum(numbers);
         System.out.println("Cəm: " + sum);
