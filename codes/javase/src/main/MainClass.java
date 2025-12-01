@@ -12,3 +12,4 @@ public class MainClass {
         System.out.println("Dairənin uzunluğu: " + circle.length);
     }
 }
+
