@@ -2,8 +2,8 @@ package accessModifiers;
 
 public class Task {
 	String word = "salam";
-	String reversed = "";
-
+	String reversed = "meow"
+;
 	for (int i = word.length() - 1; i >= 0; i--) {
 	    reversed = reversed + word.charAt(i);
 	}
