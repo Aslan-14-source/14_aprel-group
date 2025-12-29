@@ -1,18 +1,25 @@
 package main;
 
 public class Employee extends Person {
+	private double salary;
+	private String department;
+	private String username;
+	private String password;
 
-	protected double salary;
-	protected String department;
-	protected String username;
-	protected String password;
+	public Employee(int id, String name, String surname, int age, String phone, String address, double salary,
+			String department, String username, String password) {
+		super(id, name, surname, age, phone, address);
+		this.salary = salary;
+		this.department = department;
+		this.username = username;
+		this.password = password;
+	}
 
-	@Override
-	public void printInfo() {
-		super.printInfo();
-		System.out.println("Maaş: " + salary);
-		System.out.println("Şöbə: " + department);
-		System.out.println("İstifadəçi adı: " + username);
-		System.out.println("Şifrə: " + password);
+	public void printEmployeeInfo() {
+		printInfo();
+		System.out.println("Salary: " + salary);
+		System.out.println("Department: " + department);
+		System.out.println("Username: " + username);
+		System.out.println("Password: " + password);
 	}
 }
