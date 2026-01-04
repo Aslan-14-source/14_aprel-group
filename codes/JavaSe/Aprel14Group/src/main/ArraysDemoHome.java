@@ -1,7 +1,7 @@
 package main;
 public class ArraysDemoHome {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
         int[] numbers = {12, 5, 8, 20};
 
