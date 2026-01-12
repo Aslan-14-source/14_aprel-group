@@ -3,7 +3,7 @@ package main;
 public class Main {
 	public static void main(String[] args) {
 
-		Circle circle = new Circle(5);
+		Circle2 circle = new Circle2(5.2);
 		Rectangle rectangle = new Rectangle(4, 6);
 
 		System.out.println("Circle Area: " + circle.getArea());

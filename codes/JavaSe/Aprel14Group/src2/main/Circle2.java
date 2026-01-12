@@ -1,10 +1,10 @@
 package main;
 
-public class Circle implements Shape {
+public class Circle2 implements Shape {
 
 	private double radius;
 
-	public Circle(double radius) {
+	public Circle2(double radius) {
 		this.radius = radius;
 	}
 
