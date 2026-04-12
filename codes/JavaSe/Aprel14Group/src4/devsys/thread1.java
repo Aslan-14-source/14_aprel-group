@@ -1,4 +1,4 @@
-package Devsys;
+package devsys;
 
 public class thread1 extends Thread {
 
