@@ -67,6 +67,6 @@ public class StudentFileApp {
 
 		} catch (IOException e) {
 			System.out.println("Xəta baş verdi: " + e.getMessage());
-		}
+		}	
 	}
 }
