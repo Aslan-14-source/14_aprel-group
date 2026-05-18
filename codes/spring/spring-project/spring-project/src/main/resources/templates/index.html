@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Students</title>
+
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+</style>
+
+</head>
+<body>
+
+	<h2>Qeydiyyat Formu</h2>
+
+	<form action="/add" method="post">
+
+		<label>Ad:</label> <input type="text" name="name"> <br>
+		<br> <label>Soyad:</label> <input type="text" name="surname">
+
+		<br>
+		<br> <label>Qiymət:</label> <input type="number" name="grade">
+
+		<br>
+		<br>
+
+		<button type="submit">Əlavə et</button>
+
+	</form>
+
+	<hr>
+
+	<h2>Tələbələr</h2>
+
+	<table>
+
+		<tr>
+			<th>Ad</th>
+			<th>Soyad</th>
+			<th>Qiymət</th>
+		</tr>
+
+		<tr th:each="s : ${students}">
+			<td th:text="${s.name}"></td>
+			<td th:text="${s.surname}"></td>
+			<td th:text="${s.grade}"></td>
+		</tr>
+
+	</table>
+
+</body>
+</html>
