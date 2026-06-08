@@ -1,4 +1,4 @@
-package az.developia.spring_project.entity;
+package az.developia.ComputerShopping.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,5 +12,4 @@ public class Computer {
 	private Long id;
 	private String brand;
 	private String model;
-
 }

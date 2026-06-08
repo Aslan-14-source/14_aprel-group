@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import az.developia.spring_project.entity.Computer;
+import az.developia.ComputerShopping.entity.Computer;
 
 @RestController
 public class ComputerController {
