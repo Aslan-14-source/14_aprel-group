@@ -1,0 +1,96 @@
+2026-06-21 16:30:36.491 INFO  a.d.s.SpringProjectApplication - Starting SpringProjectApplication using Java 21.0.9 with PID 3244 (C:\Github\14_aprel-group\codes\spring\spring-project\spring-project\target\classes started by aslan in C:\Github\14_aprel-group\codes\spring\spring-project\spring-project)
+2026-06-21 16:30:36.494 INFO  a.d.s.SpringProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-21 16:30:36.521 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-21 16:30:36.523 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-21 16:30:36.529 INFO  a.d.s.SpringProjectApplication - Starting SpringProjectApplication using Java 21.0.9 with PID 3244 (C:\Github\14_aprel-group\codes\spring\spring-project\spring-project\target\classes started by aslan in C:\Github\14_aprel-group\codes\spring\spring-project\spring-project)
+2026-06-21 16:30:36.530 INFO  a.d.s.SpringProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-21 16:30:36.601 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-21 16:30:36.601 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-21 16:30:36.606 INFO  a.d.s.SpringProjectApplication - Starting SpringProjectApplication using Java 21.0.9 with PID 3244 (C:\Github\14_aprel-group\codes\spring\spring-project\spring-project\target\classes started by aslan in C:\Github\14_aprel-group\codes\spring\spring-project\spring-project)
+2026-06-21 16:30:36.606 INFO  a.d.s.SpringProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-21 16:30:36.748 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-21 16:30:36.748 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-21 16:30:36.768 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2026-06-21 16:30:36.794 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2026-06-21 16:30:36.902 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-21 16:30:36.905 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-21 16:30:36.906 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-21 16:30:36.907 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-21 16:30:36.932 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 401 ms
+2026-06-21 16:30:36.964 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-21 16:30:36.986 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-21 16:30:36.986 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-21 16:30:36.987 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-21 16:30:36.988 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-21 16:30:36.998 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-21 16:30:36.999 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-06-21 16:30:37.023 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 524 ms
+2026-06-21 16:30:37.025 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16ad27d0
+2026-06-21 16:30:37.026 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-06-21 16:30:37.034 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/computershopping_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: computershopping_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-21 16:30:37.086 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-21 16:30:37.101 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-21 16:30:37.112 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-21 16:30:37.129 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2026-06-21 16:30:37.136 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-21 16:30:37.158 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-21 16:30:37.264 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-21 16:30:37.265 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-06-21 16:30:37.286 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cff629a
+2026-06-21 16:30:37.287 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-06-21 16:30:37.289 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/computershopping_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: computershopping_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-21 16:30:37.295 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-21 16:30:37.324 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-06-21 16:30:37.326 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-06-21 16:30:37.326 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-21 16:30:37.327 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-21 16:30:37.338 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-21 16:30:37.340 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2026-06-21 16:30:37.344 INFO  a.d.s.SpringProjectApplication - Started SpringProjectApplication in 0.846 seconds (process running for 133.536)
+2026-06-21 16:30:37.346 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-06-21 16:30:37.356 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-21 16:30:37.359 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 751 ms
+2026-06-21 16:30:37.427 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-21 16:30:37.446 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-21 16:30:37.517 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-21 16:30:37.518 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2026-06-21 16:30:37.547 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fe2a0f7
+2026-06-21 16:30:37.547 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2026-06-21 16:30:37.551 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/computershopping_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: computershopping_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-21 16:30:37.572 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-06-21 16:30:37.575 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-21 16:30:37.589 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-21 16:30:37.596 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...

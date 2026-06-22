@@ -1,44 +1,57 @@
 package az.developia.ComputerShopping.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 import az.developia.ComputerShopping.entity.Computer;
+import az.developia.ComputerShopping.service.ComputerService;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/computers")
 public class ComputerController {
 
-	private List<Computer> computers = new ArrayList<>();
-
-	public ComputerController() {
-		computers.add(new Computer(1L, "Asus", "TUF"));
-		computers.add(new Computer(2L, "Aplle", "Macbook"));
-		computers.add(new Computer(3L, "Acer", "Predator"));
-		computers.add(new Computer(4L, "Asus", "ROG"));
-	}
+	@Autowired
+	private ComputerService service;
 
 	@GetMapping
 	public List<Computer> getAll() {
-		return computers;
+		return service.getComputers(null);
+	}
+
+	@GetMapping("/{id}")
+	public Computer getById(@PathVariable Integer id) {
+		return service.getComputerById(id).orElseThrow(() -> new RuntimeException("Computer tapılmadı"));
+	}
+
+	@PostMapping
+	public String add(@RequestBody Computer computer) {
+		service.addComputer(computer);
+		return "Computer elave edildi";
+	}
+
+	@PutMapping
+	public String update(@RequestBody Computer computer) {
+		return service.updateComputer(computer);
+	}
+
+	@DeleteMapping("/{id}")
+	public String delete(@PathVariable Integer id) {
+		service.deleteComputer(id);
+		return "Computer silindi";
 	}
 
 	@GetMapping("/search")
 	public List<Computer> searchByBrand(@RequestParam String brand) {
+		return service.findByBrand(brand);
+	}
 
-		List<Computer> result = new ArrayList<>();
+	@GetMapping("/price")
+	public List<Computer> searchByPrice(@RequestParam(name = "minprize") Double a,
+			@RequestParam(name = "maxprize") Double b) {
 
-		for (Computer c : computers) {
-			if (c.getBrand().equalsIgnoreCase(brand)) {
-				result.add(c);
-			}
-		}
-
-		return result;
+		return service.findPriceRange(a, b);
 	}
 }

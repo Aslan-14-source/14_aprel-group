@@ -2,8 +2,10 @@ package az.developia.spring_project.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+//@Component
+//@Service
 public class AppService {
 
 	@Value("${app.name}")

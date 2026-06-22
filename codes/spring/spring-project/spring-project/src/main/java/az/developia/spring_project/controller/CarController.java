@@ -1,25 +1,23 @@
 package az.developia.spring_project.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import az.developia.spring_project.entity.Car;
+import az.developia.spring_project.service.CarService;
 
+@RequestMapping(path = "/cars")
 @RestController
 public class CarController {
 
-	@GetMapping("/cars")
-	public List<Car> getCars() {
+	@Autowired
+	private CarService service;
 
-		List<Car> cars = new ArrayList<>();
-
-		cars.add(new Car(1L, "BMW", "E92 M3", 2010));
-		cars.add(new Car(2L, "Mercedes", "CLS63 AMG", 2014));
-		cars.add(new Car(3L, "Audi", "RS6", 2019));
-
-		return cars;
+	@PostMapping("/add")
+	public void addCar(@RequestBody Car car) {
+		service.addCar(car);
 	}
 }
