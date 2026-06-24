@@ -54,4 +54,9 @@ public class ComputerController {
 
 		return service.findPriceRange(a, b);
 	}
+
+	@GetMapping("/count")
+	public Long countAllComputers() {
+		return service.countAllComputers();
+	}
 }

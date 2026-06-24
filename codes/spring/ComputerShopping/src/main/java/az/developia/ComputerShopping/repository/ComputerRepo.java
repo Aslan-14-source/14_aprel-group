@@ -18,4 +18,10 @@ public interface ComputerRepo extends JpaRepository<Computer, Integer> {
 			WHERE price BETWEEN :a AND :b
 			""", nativeQuery = true)
 	List<Computer> findComputersByPriceRange(@Param("a") Double a, @Param("b") Double b);
+
+	@Query(value = """
+			SELECT COUNT(*)
+			FROM computers
+			""", nativeQuery = true)
+	Long countAllComputers();
 }

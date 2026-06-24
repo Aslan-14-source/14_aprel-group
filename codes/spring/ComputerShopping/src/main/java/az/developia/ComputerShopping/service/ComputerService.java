@@ -47,4 +47,8 @@ public class ComputerService {
 	public List<Computer> findPriceRange(Double a, Double b) {
 		return repo.findComputersByPriceRange(a, b);
 	}
+
+	public Long countAllComputers() {
+		return repo.countAllComputers();
+	}
 }
