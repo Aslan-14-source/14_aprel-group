@@ -1,33 +1,30 @@
 package az.developia.ComputerShopping.entity;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "computers")
+@Table(name = "orders")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString(exclude = "user")
-public class Computer {
+public class Order {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	private String brand;
-	private String model;
-	private Double price;
+	private LocalDate orderDate;
+
+	private Double totalPrice;
+
+	private String status;
 
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
-
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "specification_id")
-	private Specification specification;
-	@ManyToOne
-	@JoinColumn(name = "category_id")
-	private Category category;
 }
