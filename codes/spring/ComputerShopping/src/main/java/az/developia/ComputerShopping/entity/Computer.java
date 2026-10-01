@@ -17,7 +17,9 @@ public class Computer {
 	private Integer id;
 
 	private String brand;
+
 	private String model;
+
 	private Double price;
 
 	@ManyToOne
@@ -27,6 +29,7 @@ public class Computer {
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "specification_id")
 	private Specification specification;
+
 	@ManyToOne
 	@JoinColumn(name = "category_id")
 	private Category category;

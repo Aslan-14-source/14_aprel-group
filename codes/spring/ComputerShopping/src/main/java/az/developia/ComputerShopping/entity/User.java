@@ -11,7 +11,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = "orders")
+@ToString(exclude = { "orders", "computers" })
 public class User {
 
 	@Id
@@ -19,11 +19,23 @@ public class User {
 	private Integer id;
 
 	private String firstName;
+
 	private String lastName;
+
+	@Column(unique = true, nullable = false)
 	private String username;
+
 	private String password;
+
 	private String email;
+
+	private String role;
+
+	private String authority;
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
 	private List<Order> orders;
+
+	@OneToMany(mappedBy = "user")
+	private List<Computer> computers;
 }
