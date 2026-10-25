@@ -1,0 +1,13 @@
+package az.developia.computer_service;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ComputerServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
