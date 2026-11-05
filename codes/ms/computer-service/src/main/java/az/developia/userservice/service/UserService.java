@@ -31,7 +31,7 @@ public class UserService {
 		User user = userRepository.findById(userId)
 				.orElseThrow(() -> new RuntimeException("Istifadeci tapilmadi: " + userId));
 
-		ComputerListDto result = restTemplate.getForObject("http://localhost:8081/computers/user/" + userId,
+		ComputerListDto result = restTemplate.getForObject("http://computer-service2/computers/user/" + userId,
 				ComputerListDto.class);
 
 		List<ComputerDto> computerList = result == null || result.getComputers() == null ? List.of()
